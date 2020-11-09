@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen- Demo FlexBook3</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: hotpink;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: rgb(238, 144, 144);
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: lightskyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem {
+            background: gold;
+        }
+
+        .sideBarRightItem {
+            background: limegreen;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 3px solid black;
+            text-align: center;
+            flex-flow: column;
+        }
+
+        .mainContentItem {
+            flex: 3 0px;
+        }
+
+        .sideBarLeftItem {
+            order: 1;
+        }
+
+        .mainContentItem {
+            order: 2;
+        }
+
+        .sideBarRightItem {
+            order: 3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>HEADER -Sample FlexBook Example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContainer">
+            <article>
+                <h2>Main Container 1</h2>
+                <p>Paragraph1</p>
+            </article>
+            <article>
+                <h2>Main Container 2</h2>
+                <p>Paragraph2</p>
+            </article>
+            <article>
+                <h2>Main Container 3</h2>
+                <p>Paragraph3</p>
+            </article>
+        </section>
+        <sidebar class="sideBarItem sideBarLeftItem">Left Side Bar</sidebar>
+        <sidebar class="sideBarItem sideBarRightItem">Right Side Bar</sidebar>
+
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
