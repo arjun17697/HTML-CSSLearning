@@ -1,0 +1,61 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+    text-align: center;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header>HEADER -Sample FlexBook Example</header>
+  <div id="main">
+    <article>
+        <h2>Main Container 1</h2>
+        <p>Paragraph1</p>
+    </article>
+    <article>
+        <h2>Main Container 2</h2>
+        <p>Paragraph2</p>
+    </article>
+    <article>
+        <h2>Main Container 3</h2>
+        <p>Paragraph3</p>
+    </article>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
