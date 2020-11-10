@@ -12,7 +12,7 @@ body{
     display:flex;
     flex-flow:column wrap;
     align-content:center;
-    background:tomato;
+    background:rgb(50, 228, 15);
     font-weight:bold;
     margin-bottom:20px;
 }
